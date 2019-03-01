@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'openSans_regular';
+    src: url('../fonts/openSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'openSans_SemiBold';
+    src: url('../fonts/openSans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'openSans_bold';
+    src: url('../fonts/openSans/OpenSans-Bold.ttf');
+}
+
+/*=============Myriad============*/
+
+@font-face {
+    font-family: 'myriad_regular';
+    src: url('../fonts/Myriad/MYRIADPRO-REGULAR.OTF');
+}
+

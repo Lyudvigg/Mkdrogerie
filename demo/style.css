@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'mcdrogerie';
+  src:  url('fonts/mcdrogerie.eot?5pkc8w');
+  src:  url('fonts/mcdrogerie.eot?5pkc8w#iefix') format('embedded-opentype'),
+    url('fonts/mcdrogerie.ttf?5pkc8w') format('truetype'),
+    url('fonts/mcdrogerie.woff?5pkc8w') format('woff'),
+    url('fonts/mcdrogerie.svg?5pkc8w#mcdrogerie') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mcdrogerie-icon-"], [class*=" mcdrogerie-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mcdrogerie' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mcdrogerie-icon-plus:before {
+  content: "\e900";
+}
+.mcdrogerie-icon-mcdeogerie-logo:before {
+  content: "\e901";
+}
+.mcdrogerie-icon-uniE901:before {
+  content: "\e902";
+}
+.mcdrogerie-icon-uniE981:before {
+  content: "\e981";
+}
+.mcdrogerie-icon-uniE996:before {
+  content: "\e996";
+}
+.mcdrogerie-icon-uniE9A5:before {
+  content: "\e9a5";
+}
+.mcdrogerie-icon-uniEA6A:before {
+  content: "\ea6a";
+}
+.mcdrogerie-icon-uniEA7A:before {
+  content: "\ea7a";
+}
+.mcdrogerie-icon-uniEA85:before {
+  content: "\ea85";
+}
+.mcdrogerie-icon-uniEA86:before {
+  content: "\ea86";
+}
+.mcdrogerie-icon-uniEA87:before {
+  content: "\ea87";
+}
+.mcdrogerie-icon-uniEAA5:before {
+  content: "\eaa5";
+}
+.mcdrogerie-icon-uniEB57:before {
+  content: "\eb57";
+}
+.mcdrogerie-icon-uniEB75:before {
+  content: "\eb75";
+}
+.mcdrogerie-icon-uniEB86:before {
+  content: "\eb86";
+}
+.mcdrogerie-icon-uniEBEA:before {
+  content: "\ebea";
+}
+.mcdrogerie-icon-uniEC17:before {
+  content: "\ec17";
+}
+.mcdrogerie-icon-uniEC22:before {
+  content: "\ec22";
+}
+.mcdrogerie-icon-uniEC2A:before {
+  content: "\ec2a";
+}
+.mcdrogerie-icon-uniEC2B:before {
+  content: "\ec2b";
+}
+.mcdrogerie-icon-uniEC34:before {
+  content: "\ec34";
+}
+.mcdrogerie-icon-uniEC35:before {
+  content: "\ec35";
+}
+.mcdrogerie-icon-uniEC36:before {
+  content: "\ec36";
+}
+.mcdrogerie-icon-uniEC37:before {
+  content: "\ec37";
+}
+.mcdrogerie-icon-uniEC39:before {
+  content: "\ec39";
+}
+.mcdrogerie-icon-uniEC3A:before {
+  content: "\ec3a";
+}
+.mcdrogerie-icon-uniEC3B:before {
+  content: "\ec3b";
+}
+.mcdrogerie-icon-uniEC3C:before {
+  content: "\ec3c";
+}
+.mcdrogerie-icon-uniEC43:before {
+  content: "\ec43";
+}
+.mcdrogerie-icon-uniEC44:before {
+  content: "\ec44";
+}
+.mcdrogerie-icon-uniEC55:before {
+  content: "\ec55";
+}
+.mcdrogerie-icon-uniEC56:before {
+  content: "\ec56";
+}
+.mcdrogerie-icon-bar-chart:before {
+  content: "\f12e";
+}
+.mcdrogerie-icon-building-o:before {
+  content: "\f155";
+}
+.mcdrogerie-icon-calendar-check-o:before {
+  content: "\f15d";
+}
+.mcdrogerie-icon-cart-arrow-down:before {
+  content: "\f16d";
+}
+.mcdrogerie-icon-cart-plus:before {
+  content: "\f16e";
+}
+.mcdrogerie-icon-check-circle:before {
+  content: "\f17c";
+}
+.mcdrogerie-icon-circle:before {
+  content: "\f18a";
+}
+.mcdrogerie-icon-clock-o:before {
+  content: "\f18f";
+}
+.mcdrogerie-icon-dot-circle-o:before {
+  content: "\f1bc";
+}
+.mcdrogerie-icon-envelope-o:before {
+  content: "\f1c7";
+}
+.mcdrogerie-icon-facebook:before {
+  content: "\f1d7";
+}
+.mcdrogerie-icon-file:before {
+  content: "\f1df";
+}
+.mcdrogerie-icon-file-text:before {
+  content: "\f1ec";
+}
+.mcdrogerie-icon-google-plus:before {
+  content: "\f21b";
+}
+.mcdrogerie-icon-map-marker:before {
+  content: "\f27d";
+}
+.mcdrogerie-icon-money:before {
+  content: "\f294";
+}
+.mcdrogerie-icon-pinterest:before {
+  content: "\f2ba";
+}
+.mcdrogerie-icon-shopping-cart:before {
+  content: "\f2fa";
+}
+.mcdrogerie-icon-star:before {
+  content: "\f318";
+}
+.mcdrogerie-icon-star-half-o:before {
+  content: "\f31a";
+}
+.mcdrogerie-icon-star-o:before {
+  content: "\f31b";
+}
+.mcdrogerie-icon-truck:before {
+  content: "\f352";
+}
+.mcdrogerie-icon-twitter:before {
+  content: "\f359";
+}
+.mcdrogerie-icon-user:before {
+  content: "\f364";
+}
+.mcdrogerie-icon-whatsapp:before {
+  content: "\f37a";
+}
+.mcdrogerie-icon-basket:before {
+  content: "\e8cc";
+}
+.mcdrogerie-icon-bargraph:before {
+  content: "\e018";
+}
+.mcdrogerie-icon-trophy:before {
+  content: "\e023";
+}
+.mcdrogerie-icon-clock1:before {
+  content: "\e055";
+}
+.mcdrogerie-icon-alarmclock1:before {
+  content: "\e059";
+}
+.mcdrogerie-icon-alarmclock:before {
+  content: "\e903";
+}
+.mcdrogerie-icon-clock:before {
+  content: "\e903";
+}
+.mcdrogerie-icon-check_box_outline_blank:before {
+  content: "\e904";
+}
+.mcdrogerie-icon-check_box:before {
+  content: "\e905";
+}
+.mcdrogerie-icon-thumbs-o-down:before {
+  content: "\e906";
+}
+.mcdrogerie-icon-thumbs-o-up:before {
+  content: "\e907";
+}
+.mcdrogerie-icon-thumbs-down:before {
+  content: "\e908";
+}
+.mcdrogerie-icon-thumbs-up:before {
+  content: "\e909";
+}
