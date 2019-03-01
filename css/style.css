@@ -549,7 +549,7 @@ header nav {
 }
 
 .page_guide_block_items_icons {
-    font-size: 13px;
+    font-size: 10px;
     color: #8E8E8E;
 }
 
@@ -562,6 +562,7 @@ header nav {
     border: none;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .card__title {
@@ -657,6 +658,12 @@ header nav {
     margin-top: 5px;
 }
 
+.cards_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /*===========Right-Container=============*/
 
 .shop_right_menu_block {
@@ -728,7 +735,6 @@ header nav {
 
 .pagination_page_block {
     width: 223px;
-    margin-top: 15px;
 }
 
 .pagination_page_count_block {
@@ -739,22 +745,57 @@ header nav {
 .pagination_page_text {
     font-family: 'openSans_regular';
     font-size: 12px;
-    margin-top: 15px;
     color: #90949C;
+    margin-top: 10px;
 }
 
 .pagination_page_text_bold {
     font-family: 'openSans_bold';
 }
 
-.cards_block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.anzigen_block_select {
+    width: 66px;
+    height: 31px;
+    background: url('../img/Shop_select_arrow.png') no-repeat right #FBFBFB;
+    -webkit-appearance: none;
+    padding: 0 10px 0 12px;
+    background-position-x: 44px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
-.card {
-    margin-bottom: 20px;
+.sortieren_block_select {
+    width: 191px;
+    height: 31px;
+    background: url('../img/Shop_select_arrow.png') no-repeat right #FBFBFB;
+    -webkit-appearance: none;
+    padding: 0 10px 0 12px;
+    background-position-x: 167px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.pagination_block_text {
+    margin-right: 10px;
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    margin-right: 13px;
+    color: #90949C;
+}
+
+.pagination_block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 14px;
 }
 
 /*=================Footer================*/
