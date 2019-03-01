@@ -59,6 +59,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'openSans_regular';
+    background: #FBFBFB;
 }
 
 .d_none {
@@ -563,6 +564,11 @@ header nav {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     margin-bottom: 20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .card__title {
@@ -641,6 +647,7 @@ header nav {
 
 .card:hover {
     cursor: pointer;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover .card_btn {
@@ -798,6 +805,75 @@ header nav {
     padding-top: 14px;
 }
 
+/*================Bottom Pagination================*/
+
+.bottom_pagination_block {
+    padding: 35px 15px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #fff;
+}
+
+.bottom_pagination_block .pagination_page_block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pagination_prev_block {
+    width: 141px;
+    height: 32px;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.pagination_prev_block_text {
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    color: #C2C2C2;
+}
+
+.pagination_prev_block_icon {
+    font-size: 10px;
+    color: #C2C2C2;
+}
+
+.bottom_pagination_block .pagination_page_count_block {
+    max-width: 451px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page_count_text_etc {
+    border: 1px solid #E8E8E8;
+}
+
+.page_count_text_etc .page_count_text {
+    color: #E8E8E8;
+}
+
+.page_count_active {
+    background: #EC2839;
+    border: 1px solid #EC2839;
+}
+
+.page_count_active .page_count_text {
+    color: #fff;
+}
 /*=================Footer================*/
 
 .footer_content_block {
