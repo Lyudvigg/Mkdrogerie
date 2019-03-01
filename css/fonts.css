@@ -13,6 +13,11 @@
     src: url('../fonts/openSans/OpenSans-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'openSans_italic';
+    src: url('../fonts/openSans/OpenSans-Italic.ttf');
+}
+
 /*=============Myriad============*/
 
 @font-face {
