@@ -18,6 +18,11 @@
     src: url('../fonts/openSans/OpenSans-Italic.ttf');
 }
 
+@font-face {
+    font-family: 'openSans_ExtraBold';
+    src: url('../fonts/openSans/OpenSans-ExtraBold.ttf');
+}
+
 /*=============Myriad============*/
 
 @font-face {
