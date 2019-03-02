@@ -99,6 +99,7 @@ body {
     color: #FFFFFF;
     display: block;
     margin: 0 auto;
+    line-height: 1;
 }
 
 .header_warenkorb_btn {
