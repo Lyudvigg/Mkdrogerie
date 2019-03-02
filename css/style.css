@@ -1171,6 +1171,19 @@ div[slider]>input[type=range]::-ms-tooltip {
     padding-top: 14px;
 }
 
+.pagination_block .dropdown-item{
+    font-size: 14px;
+}
+
+.anzigen_block .dropdown-menu {
+    width: 66px !important;
+    min-width: auto;
+}
+
+.sortieren_block .dropdown-menu {
+    width: 191px !important;
+    min-width: auto;
+}
 /*================Bottom Pagination================*/
 
 .bottom_pagination_block {
