@@ -1078,6 +1078,11 @@ div[slider]>input[type=range]::-ms-tooltip {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     padding: 27px 17px;
     background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .main_container {
