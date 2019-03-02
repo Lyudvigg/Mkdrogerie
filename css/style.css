@@ -83,6 +83,10 @@ body {
     position: relative;
 }
 
+.page_block_box_shadows {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
 /*=============Header===========*/
 
 .header_warenkorb_count_block {
@@ -486,15 +490,16 @@ header nav {
     width: 100%;
     color: rgb(76, 86, 92);
     background: #FFF;
-    border: 1px solid #D7D6D6;
     width: 281px;
-    border-bottom: none;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+.accordion li:last-child .shop_left_menu_link {
+    border-bottom: none;
 }
 
 .accordion .shop_left_menu_link {
@@ -593,7 +598,6 @@ header nav {
 /*==============Filter=============*/
 
 .filter_block {
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     margin-top: 21px;
     padding: 20px;
     background: #fff;
@@ -754,7 +758,6 @@ header nav {
 /*============preis==============*/
 
 .preis {
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     margin-top: 21px;
     padding: 20px;
     background: #fff;
@@ -770,7 +773,7 @@ header nav {
     height: 4px;
     border-radius: 5px;
     text-align: left;
-    margin: 15px 0 10px 0;
+    margin: 20px 0 10px 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -829,9 +832,8 @@ header nav {
     height: 20px;
     width: 20px;
     text-align: left;
-    margin-left: -11px;
+    margin-left: -5px;
     cursor: pointer;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
     background-color: #EC2839;
     border-radius: 50%;
     border: 2px solid #fff;
@@ -948,6 +950,12 @@ div[slider]>input[type=range]::-ms-tooltip {
     color: #EC2839;
 }
 
+.preis_title {
+    font-family: 'openSans_bold';
+    font-size: 16px;
+    color: #2D2A2A;
+}
+
 /*===============Card============*/
 
 .card {
@@ -955,7 +963,6 @@ div[slider]>input[type=range]::-ms-tooltip {
     padding: 25px 25px 24px;
     background: #fff;
     border: none;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     margin-bottom: 20px;
     transition: .5s;
@@ -963,12 +970,51 @@ div[slider]>input[type=range]::-ms-tooltip {
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+    position: relative;
+}
+
+.product_discount_block {
+    position: absolute;
+    min-width: 120px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #EC2839;
+    display: flex;
+    align-items: center;
+    top: 24;
+    left: 21px;
+    justify-content: space-between;
+}
+
+.product_discount_actioned, .product_discount_count {
+    font-family: 'openSans_bold';
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: .8;
+}
+
+.product_discount_actioned {
+    padding: 7px 7px 6px 6px;
+}
+
+.product_discount_count {
+    padding: 7px 7px 6px 8px;
+    background: #A31723;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 100%;
+    margin-left: 5px;
 }
 
 .card__title {
     font-family: 'openSans_bold';
     font-size: 14px;
     color: #2D2A2A;
+    letter-spacing: -.3px;
     line-height: 1.714;
 }
 
@@ -978,6 +1024,8 @@ div[slider]>input[type=range]::-ms-tooltip {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 230px;
+    height: 230px;
 }
 
 .card_btn {
@@ -992,7 +1040,6 @@ div[slider]>input[type=range]::-ms-tooltip {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    margin-top: 30px;
     display: flex;
     align-items: center;
     padding: 0px 27px;
@@ -1002,6 +1049,8 @@ div[slider]>input[type=range]::-ms-tooltip {
     -ms-transition: .5s;
     -o-transition: .5s;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
 }
 
 .card_rating_block {
@@ -1009,6 +1058,10 @@ div[slider]>input[type=range]::-ms-tooltip {
     align-items: center;
     justify-content: space-between;
     width: 110px;
+}
+
+.card_rating_block, .card__size_ml {
+    margin-top: 6px;
 }
 
 .card__star_raiting {
@@ -1021,6 +1074,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     font-size: 26px;
     color: #83B735;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .card_btn_icon {
@@ -1039,11 +1093,6 @@ div[slider]>input[type=range]::-ms-tooltip {
     margin-left: 5px;
 }
 
-.card:hover {
-    cursor: pointer;
-    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.1);
-}
-
 .card:hover .card_btn {
     background: #EC2839;
     color: #fff;
@@ -1057,6 +1106,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     font-size: 14px;
     color: #A6A6A6;
     margin-top: 5px;
+    margin-bottom: 80px;
 }
 
 .cards_block {
@@ -1064,7 +1114,20 @@ div[slider]>input[type=range]::-ms-tooltip {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.card__discounted_price_red {
+    color: #EC2839;
+}
 
+.card__discounted_price {
+    font-family: 'openSans_bold';
+    color: #C2C2C2;
+    font-size: 16px;
+    text-decoration: line-through;
+    top: 276px;
+    position: absolute;
+    line-height: .8;
+    z-index: 999;
+}
 /*===========Right-Container=============*/
 
 .shop_right_menu_block {
@@ -1075,7 +1138,6 @@ div[slider]>input[type=range]::-ms-tooltip {
 .shop_right_shop_block {
     width: 100%;
     margin-bottom: 25px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     padding: 27px 17px;
     background: #fff;
     border-radius: 3px;
