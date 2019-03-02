@@ -861,7 +861,7 @@ div[slider]>input[type=range]::-ms-tooltip {
 }
 
 .inp_range_block_text span {
-    font-family: 'openSans_SemiBold';
+    font-family: 'openSans_bold';
     color: #EC2839;
 }
 
