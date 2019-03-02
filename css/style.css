@@ -116,6 +116,7 @@ body {
 .header_warenkorb_btn__icon {
     font-size: 18px;
     color: #757575;
+    margin-right: 10px;
 }
 
 .header_warenkorb_btn_text {
@@ -126,16 +127,18 @@ body {
 
 .header_first_btn_icon_block {
     width: 30px;
-    height: 30px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: #F7F7F7;
+    background: #f7f7f7;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
+    color: #90949c;
+    height: 44px;
 }
 
 .header_first_btn_icon {
