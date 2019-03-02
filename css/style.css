@@ -117,6 +117,11 @@ body {
     font-size: 18px;
     color: #757575;
     margin-right: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .header_warenkorb_btn_text {
@@ -127,6 +132,8 @@ body {
 
 .header_first_btn_icon_block {
     width: 30px;
+    height: 30px;
+    min-width: 30px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -138,17 +145,21 @@ body {
     justify-content: center;
     margin-right: 10px;
     color: #90949c;
-    height: 44px;
 }
 
 .header_first_btn_icon {
     font-size: 18px;
     color: #757575;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .header_search_inp {
     max-width: 584px;
-    height: 46px;
+    height: 44px;
     background: #F7F7F7;
     border: 1px solid #DEDEDE;
     width: 100%;
@@ -159,6 +170,7 @@ body {
     -o-border-radius: 22px;
     padding-left: 23px;
     padding-right: 60px;
+    font-size: 14px;
 }
 
 .header_search_block {
@@ -181,6 +193,11 @@ input:hover {
     font-size: 18px;
     color: #222222;
     cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .header_seacrch_btn {
@@ -194,6 +211,10 @@ input:hover {
 .logo_header {
     font-size: 42px;
     color: #EC2839;
+}
+
+.header_search_block:hover .header_seacrch_icon {
+    color: #EC2839 !important;
 }
 
 .header_block__content {
@@ -215,6 +236,15 @@ input:hover {
     font-family: 'openSans_SemiBold';
     font-size: 14px;
     color: #757575;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.header_first_btn_block:hover .header_first_btn_text, .header_first_btn_block:hover .header_first_btn_icon, .header_warenkorb_btn:hover .header_warenkorb_btn_text, .header_warenkorb_btn:hover .header_warenkorb_btn__icon {
+    color: #2D2A2A;
 }
 
 header nav {
@@ -1174,7 +1204,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     padding-top: 14px;
 }
 
-.pagination_block .dropdown-item{
+.pagination_block .dropdown-item {
     font-size: 14px;
 }
 
@@ -1187,6 +1217,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     width: 191px !important;
     min-width: auto;
 }
+
 /*================Bottom Pagination================*/
 
 .bottom_pagination_block {
