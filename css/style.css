@@ -421,6 +421,11 @@ header nav {
     width: 281px;
     border-bottom: none;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .accordion .shop_left_menu_link {
@@ -508,6 +513,20 @@ header nav {
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
     margin-top: 21px;
     padding: 20px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.filter_block_title {
+    font-family: 'openSans_bold';
+    font-size: 16px;
+    color: #2D2A2A;
+    line-height: 1.125;
+    margin-bottom: 5px;
 }
 
 .chackbox_block {
@@ -552,6 +571,341 @@ header nav {
 .page_guide_block_items_icons {
     font-size: 10px;
     color: #8E8E8E;
+}
+
+.chackbox_block_items {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'openSans_SemiBold';
+    font-size: 14px;
+    color: #2D2A2A;
+    margin-bottom: 15px;
+    padding-left: 33px;
+}
+
+/* Hide the browser's default checkbox */
+
+.chackbox_block_items input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+
+.chackbox_block_items:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.chackbox_block_items input:checked~.checkmark {
+    background-color: #EC2839;
+    border: 1px solid #EC2839;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.chackbox_block_items input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.chackbox_block_items .checkmark:after {
+    left: 0px;
+    top: 0px;
+    width: 11px;
+    height: 7px;
+    background-image: url('../img/filter_checkbox_icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/*============preis==============*/
+
+.preis {
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 21px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+[slider] {
+    position: relative;
+    height: 4px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 45px 0 10px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+[slider]>div {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 4px;
+}
+
+[slider]>div>[inverse-left] {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #E8E8E8;
+    margin: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+[slider]>div>[inverse-right] {
+    position: absolute;
+    right: 0;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #E8E8E8;
+    margin: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+[slider]>div>[range] {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    border-radius: 14px;
+    background-color: #EC2839;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+[slider]>div>[thumb] {
+    position: absolute;
+    top: -8px;
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    text-align: left;
+    margin-left: -11px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    background-color: #EC2839;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    outline: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+[slider]>input[type=range] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 3;
+    height: 14px;
+    top: -2px;
+    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+div[slider]>input[type=range]::-ms-track {
+    -webkit-appearance: none;
+    background: transparent;
+    color: transparent;
+}
+
+div[slider]>input[type=range]::-moz-range-track {
+    -moz-appearance: none;
+    background: transparent;
+    color: transparent;
+}
+
+div[slider]>input[type=range]:focus::-webkit-slider-runnable-track {
+    background: transparent;
+    border: transparent;
+}
+
+div[slider]>input[type=range]:focus {
+    outline: none;
+}
+
+div[slider]>input[type=range]::-ms-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    background: red;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+div[slider]>input[type=range]::-moz-range-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    background: red;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+div[slider]>input[type=range]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    background: red;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+div[slider]>input[type=range]::-ms-fill-lower {
+    background: transparent;
+    border: 0 none;
+}
+
+div[slider]>input[type=range]::-ms-fill-upper {
+    background: transparent;
+    border: 0 none;
+}
+
+div[slider]>input[type=range]::-ms-tooltip {
+    display: none;
+}
+
+[slider]>div>[sign] {
+    opacity: 0;
+    position: absolute;
+    margin-left: -11px;
+    top: -39px;
+    z-index: 3;
+    background-color: #1ABC9C;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+
+[slider]>div>[sign]:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    border-radius: 16px;
+    top: 19px;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top-width: 16px;
+    border-top-style: solid;
+    border-top-color: #1ABC9C;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+[slider]>div>[sign]>span {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+[slider]:hover>div>[sign] {
+    opacity: 1;
+}
+
+.inp_range_block_text {
+    font-family: 'openSans_regular';
+    color: #ACAFB5;
+    font-size: 14px;
+}
+
+.inp_range_block_text span {
+    font-family: 'openSans_SemiBold';
+    color: #EC2839;
 }
 
 /*===============Card============*/
@@ -874,6 +1228,86 @@ header nav {
 .page_count_active .page_count_text {
     color: #fff;
 }
+
+/*===============top Icon=================*/
+
+.top_icons {
+    max-width: 780px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-top: 66px;
+    margin-bottom: 35px;
+}
+
+.Newsletter_section_content__items__title {
+    font-family: 'openSans_SemiBold';
+    font-size: 24px;
+    color: #EC2839;
+    line-height: 1.833;
+}
+
+.Newsletter_section {
+    background: #fff;
+    border-top: 1px solid #E8E8E8;
+    padding: 38px 0 35px;
+}
+
+.Newsletter_section_content__items_text {
+    font-family: 'openSans_regular';
+    font-size: 16px;
+    color: #757575;
+}
+
+.Newsletter_section_content__items_inp_block_btn {
+    font-family: 'openSans_bold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 138px;
+    height: 42px;
+    background: #EC2839;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #E8E8E8;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Newsletter_section_content__items_inp_block {
+    max-width: 498px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    height: 44px;
+}
+
+.Newsletter_section_content__items_inp_block_inp {
+    padding: 0 150px 0 19px;
+    width: 100%;
+    height: 100%;
+}
+
+.Newsletter_inp_block {
+    max-width: 498px;
+    width: 100%;
+}
+
+.Newsletter_section_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*=================Footer================*/
 
 .footer_content_block {
