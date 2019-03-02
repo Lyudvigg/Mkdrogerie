@@ -366,6 +366,7 @@ header nav {
     font-family: 'openSans_SemiBold';
     font-size: 14px;
     color: #2D2A2A;
+    text-transform: uppercase;
     margin-bottom: 25px;
 }
 
