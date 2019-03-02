@@ -1264,7 +1264,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto;
     padding-top: 66px;
     margin-bottom: 35px;
