@@ -1475,7 +1475,7 @@
                         <span class="header_bottom_block_text">Ausverkauf</span>
                     </div>
                     <div class="header_bottom_block__items">
-                        <span class="header_bottom_block_text">AKTIONED</span>
+                        <span class="header_bottom_block_text header_bottom_block_text_active">AKTIONED</span>
                     </div>
                 </div>
             </div>
@@ -1614,26 +1614,29 @@
                                     <div>
                                         <div inverse-left style="width:70%;"></div>
                                         <div inverse-right style="width:70%;"></div>
-                                        <div range style="left:30%;right:40%;"></div>
-                                        <span thumb style="left:30%;"></span>
-                                        <span thumb style="left:60%;"></span>
+                                        <div range style="left:0%;right:50%;"></div>
+                                        <span thumb style="left:0%;"></span>
+                                        <span thumb style="left:50%;"></span>
                                     </div>
-                                    <input type="range" tabindex="0" value="30" max="100" min="0" step="1" oninput="
+                                    <input id="inp_range_block_first_inp" type="range" tabindex="0" value="0" max="100"
+                                        min="0" step="1" oninput="
                                             this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
                                             var children = this.parentNode.childNodes[1].childNodes;
                                             children[1].style.width=value+'%';
                                             children[5].style.left=value+'%';
                                             children[7].style.left=value+'%';" />
 
-                                    <input type="range" tabindex="0" value="60" max="100" min="0" step="1" oninput="
+                                    <input id="inp_range_block_second_inp" type="range" tabindex="0" value="50"
+                                        max="100" min="0" step="1" oninput="
                                             this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
                                             var children = this.parentNode.childNodes[1].childNodes;
                                             children[3].style.width=(100-value)+'%';
                                             children[5].style.right=(100-value)+'%';
                                             children[9].style.left=value+'%';" />
                                 </div>
-                                <h5 class="inp_range_block_text">von <span>6.00</span> bis
-                                    <span>150.00</span></h5>
+                                <h5 class="inp_range_block_text">von <span class="inp_range_block_first_inp">0</span>
+                                    bis
+                                    <span class="inp_range_block_second_inp">50</span></h5>
                             </div>
                         </div>
                     </div>
@@ -1669,21 +1672,31 @@
                             </div>
                             <div class="anzigen_block">
                                 <span class="pagination_block_text">Anzigen</span>
-                                <select class="anzigen_block_select">
-                                    <option>60</option>
-                                    <option>20</option>
-                                    <option>12</option>
-                                    <option>40</option>
-                                </select>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle anzigen_block_select" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        60
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">10</a>
+                                        <a class="dropdown-item" href="#">45</a>
+                                        <a class="dropdown-item" href="#">20</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="sortieren_block">
                                 <span class="pagination_block_text">Sortieren</span>
-                                <select class="sortieren_block_select">
-                                    <option>60</option>
-                                    <option>20</option>
-                                    <option>12</option>
-                                    <option>40</option>
-                                </select>
+                                <button class="btn btn-secondary dropdown-toggle sortieren_block_select" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    60
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">10</a>
+                                    <a class="dropdown-item" href="#">45</a>
+                                    <a class="dropdown-item" href="#">20</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2133,6 +2146,7 @@
 
     <!--============Scripts=============-->
     <script src="./js/JQuery-3.3.1.js"></script>
+    <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
