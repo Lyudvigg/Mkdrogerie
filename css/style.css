@@ -79,6 +79,10 @@ body {
     display: block !important;
 }
 
+.d_flex {
+    display: flex !important;
+}
+
 .relative_container {
     position: relative;
 }
@@ -1120,6 +1124,22 @@ div[slider]>input[type=range]::-ms-tooltip {
     justify-content: center;
     height: 100%;
     cursor: pointer;
+}
+
+.plus_icon {
+    font-size: 18px;
+    color: #fff;
+}
+
+.count {
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    color: #000001;
+}
+
+.delete_icon, .minuse_icon {
+    font-size: 18px;
+    color:  #888;
 }
 
 .minuse_block, .delete_icon_block, .count_block {
