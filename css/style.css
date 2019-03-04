@@ -1643,6 +1643,15 @@ div[slider]>input[type=range]::-ms-tooltip {
     padding: 0 15px;
 }
 
+.form-control:focus {
+    border-color: #ec2839;
+    box-shadow: 0 0 0 0.2rem rgba(236, 40, 57, 0.25);
+}
+
+.page_count:hover {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
 .pagination_prev_block_text {
     font-family: 'openSans_regular';
     font-size: 14px;
