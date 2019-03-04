@@ -81,19 +81,50 @@ $('.delete_icon_block').on('click', function () {
     $(this).parent().parent().children('.card_btn').removeClass('d_none');
     $(this).parent().parent().children('.card_block_functionality.card_block_functionality_active').removeClass('card_block_functionality_active');
 })
-$('.card').on('click', function (e) {
-    if (e.target !== this)
-        return;
 
-    else {
-        if ($(this).children('.card_block_functionality').hasClass('card_block_functionality_active')) {
-            $(this).children('.card_block_functionality.card_block_functionality_active').addClass('d_none');
-            $(this).children('.after_selected').addClass('d_flex');
-            let count_i = $(this).children('.card_block_functionality').children('.count_block').children('.count').text()
-            $(this).children('.after_selected').children('.count_after_selected').text(count_i)
-        }
+$(document).bind("mouseup",function(e) {
+    let temp_target = e.target;
+    if(temp_target.classList.contains('card_btn') || temp_target.parentElement.parentElement.classList.contains("card_block_functionality_active") || temp_target.parentElement.classList.contains("card_block_functionality_active") || temp_target.classList.contains("card_block_functionality_active")){
+        console.log(12);
+        e.stopPropagation();
+        return;
+    } else {
+        let temp_block = $('.card_block_functionality_active');
+        $(temp_block).parent().children('.card_block_functionality.card_block_functionality_active').addClass('d_none').removeClass("card_block_functionality_active");
+        $(temp_block).parent().children('.after_selected').addClass('d_flex');
+        let count_i = $(temp_block).parent().children('.card_block_functionality').children('.count_block').children('.count').text()
+        $(temp_block).parent().children('.after_selected').children('.count_after_selected').text(count_i);
+
     }
-})
+});
+
+// $('.card').on('click', function (e) {
+//     debugger;
+//     if (e.target !== this)
+//         return;
+
+//     else {
+//         if ($(this).children('.card_block_functionality').hasClass('card_block_functionality_active')) {
+//             $(this).children('.card_block_functionality.card_block_functionality_active').addClass('d_none');
+//             $(this).children('.after_selected').addClass('d_flex');
+//             let count_i = $(this).children('.card_block_functionality').children('.count_block').children('.count').text()
+//             $(this).children('.after_selected').children('.count_after_selected').text(count_i)
+//         }
+//     }
+// })
+
+// $('body').on('click', function () {
+//     if ($(this).children('.shop_block_content').children('.container').children('.main_container').children('.shop_right_menu_block').children('.cards_block').children('.card').children('.card_block_functionality.card_block_functionality_active').hasClass('card_block_functionality_active')) {
+//         $(this).children('.shop_block_content').children('.container').children('.main_container').children('.shop_right_menu_block').children('.cards_block').children('.card').children('.card_block_functionality.card_block_functionality_active').addClass('d_none');
+//         $(this).children('.after_selected').addClass('d_flex');
+//         let count_i = $(this).children('.card_block_functionality').children('.count_block').children('.count').text();
+//         $(this).children('.after_selected').children('.count_after_selected').text(count_i);
+//         console.log('this no work');
+//     }
+// }).children('.shop_block_content').children('.container').children('.main_container').children('.shop_right_menu_block').children('.cards_block').children('.card').children('.card_block_functionality').on('click', function (event) {
+//     event.stopPropagation();
+// });
+
 
 // Window Width
 $('.menu_mobile').removeAttr('id');
@@ -123,6 +154,6 @@ $('.toggler_menu').on('click', function () {
     $('.mobile_menu_block').css({ "opacity": "1", "visibility": "visible", "transition": ".5s" });
     $('.mobile_menu_block.opacity_n').removeClass('opacity_n');
     if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
-        $('body').css({ "overflow": "hidden"});
+        $('body').css({ "overflow": "hidden" });
     }
 })
