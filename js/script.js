@@ -141,3 +141,11 @@ $('.toggler_menu').on('click', function () {
         $('body').css({ "overflow": "hidden" });
     }
 })
+
+if (typeof console._commandLineAPI !== 'undefined') {
+    console.API = console._commandLineAPI;
+} else if (typeof console._inspectorCommandLineAPI !== 'undefined') {
+    console.API = console._inspectorCommandLineAPI;
+} else if (typeof console.clear !== 'undefined') {
+    console.API = console;
+}

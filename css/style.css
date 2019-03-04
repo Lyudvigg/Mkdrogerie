@@ -1130,7 +1130,7 @@ div[slider]>input[type=range]::-ms-tooltip {
 /*===============Card============*/
 
 .card {
-    width: 280px;
+    width: 32.3%;
     padding: 25px 25px 24px;
     background: #fff;
     border: none;
@@ -1197,6 +1197,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     align-items: center;
     width: 230px;
     height: 230px;
+    margin: 0 auto;
 }
 
 .card_btn {
