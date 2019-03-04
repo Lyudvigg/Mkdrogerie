@@ -1174,7 +1174,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     margin-left: 5px;
 }
 
-.card__title {
+.product-item-name {
     font-family: 'openSans_bold';
     font-size: 14px;
     color: #2D2A2A;
