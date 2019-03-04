@@ -1272,8 +1272,8 @@ div[slider]>input[type=range]::-ms-tooltip {
     justify-content: center;
     height: 100%;
     cursor: pointer;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .plus_icon {
