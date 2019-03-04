@@ -1339,8 +1339,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     font-family: 'openSans_ExtraBold';
     font-size: 26px;
     color: #83B735;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .card_btn_icon {
@@ -1372,7 +1371,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     font-size: 14px;
     color: #A6A6A6;
     margin-top: 5px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
 }
 
 .cards_block {
