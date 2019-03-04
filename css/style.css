@@ -106,6 +106,7 @@ body {
 }
 
 /*===============mobile_menu================*/
+
 .mobile_menu_block {
     position: fixed;
     width: 100%;
@@ -115,6 +116,7 @@ body {
     background: #fff;
     padding: 55px 15px;
 }
+
 .close_header_menu {
     width: 30px;
     height: 30px;
@@ -154,9 +156,11 @@ body {
     right: 0;
     left: 0;
 }
+
 .menu_mobile {
     width: auto !important;
 }
+
 /*=============Header===========*/
 
 .header_warenkorb_count_block {
@@ -472,6 +476,7 @@ header nav {
     font-size: 14px;
     color: #fff;
 }
+
 /*==========Page_content=============*/
 
 /*=============Left Menu===============*/
@@ -1267,6 +1272,11 @@ div[slider]>input[type=range]::-ms-tooltip {
     justify-content: center;
     height: 100%;
     cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .plus_icon {
@@ -1778,6 +1788,7 @@ footer {
 
 .footer_contact_link_third {
     color: #e74c3c;
+    text-decoration: underline;
 }
 
 .payment_block {
