@@ -1290,7 +1290,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     -o-transition: .5s;
 }
 
-.delete_icon:hover, .minuse_icon:hover {
+.delete_icon_block:hover .delete_icon, .minuse_block:hover .minuse_icon {
     color: #EC2839;
 }
 
