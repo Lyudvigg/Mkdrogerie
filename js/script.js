@@ -101,7 +101,7 @@ $(window).on('resize', function (e) {
     if (e) {
         if ($(window).width() <= 768) {
             $('.Second_faq').removeAttr('id');
-            $('.menu_mobile').attr("id", "faq-list");
+            $('.menu_mobile').attr("id", "faq-list")
         }
         else if ($(window).width() > 768) {
             $('.Second_faq').attr("id", "faq-list");

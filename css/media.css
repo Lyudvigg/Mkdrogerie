@@ -111,9 +111,16 @@
     header nav, .header_bottom_block {
         display: none;
     }
+    .Newsletter_section_content {
+        flex-direction: column;
+    }
+    .Newsletter_inp_block {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 576px) {
+    /*================Footer==============*/
     .footer_content__itemss {
         width: 100%;
         padding-top: 35px !important;
@@ -123,5 +130,16 @@
     }
     .footer_content_block {
         padding-bottom: 20px;
+    }
+    .pagination_prev_block_text, .pagination_next_block .page_count_text, .page_count_text_etc, .page_count:nth-child(4), .page_count:nth-child(6) {
+        display: none;
+    }
+    .pagination_prev_block, .pagination_next_block {
+        width: 31px;
+        justify-content: center;
+    }
+    .bottom_pagination_block .pagination_page_count_block {
+        max-width: 153px;
+        margin: 0 auto;
     }
 }
