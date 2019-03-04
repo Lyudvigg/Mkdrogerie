@@ -82,48 +82,32 @@ $('.delete_icon_block').on('click', function () {
     $(this).parent().parent().children('.card_block_functionality.card_block_functionality_active').removeClass('card_block_functionality_active');
 })
 
-$(document).bind("mouseup",function(e) {
+/*================Edit=================*/
+
+$('.after_selected').on('click', function () {
+    $(this).removeClass('d_flex');
+    $(this).parent('.card').children('.card_block_functionality').addClass('card_block_functionality_active').removeClass('d_none')
+})
+
+
+/*==============change==============*/
+
+$(document).bind("mouseup", function (e) {
     let temp_target = e.target;
-    if(temp_target.classList.contains('card_btn') || temp_target.parentElement.parentElement.classList.contains("card_block_functionality_active") || temp_target.parentElement.classList.contains("card_block_functionality_active") || temp_target.classList.contains("card_block_functionality_active")){
-        console.log(12);
+    if (temp_target.classList.contains('card_btn') || temp_target.parentElement.parentElement.classList.contains("card_block_functionality_active") || temp_target.parentElement.classList.contains("card_block_functionality_active") || temp_target.classList.contains("card_block_functionality_active")) {
         e.stopPropagation();
         return;
     } else {
         let temp_block = $('.card_block_functionality_active');
         $(temp_block).parent().children('.card_block_functionality.card_block_functionality_active').addClass('d_none').removeClass("card_block_functionality_active");
         $(temp_block).parent().children('.after_selected').addClass('d_flex');
-        let count_i = $(temp_block).parent().children('.card_block_functionality').children('.count_block').children('.count').text()
-        $(temp_block).parent().children('.after_selected').children('.count_after_selected').text(count_i);
-
+        temp_block.each(function () {
+            let count_i = $(this).parent().children('.card_block_functionality').children('.count_block').children('.count').text()
+            console.log(count_i);
+            $(this).parent().children('.after_selected').children('.count_after_selected').text(count_i);
+        });
     }
 });
-
-// $('.card').on('click', function (e) {
-//     debugger;
-//     if (e.target !== this)
-//         return;
-
-//     else {
-//         if ($(this).children('.card_block_functionality').hasClass('card_block_functionality_active')) {
-//             $(this).children('.card_block_functionality.card_block_functionality_active').addClass('d_none');
-//             $(this).children('.after_selected').addClass('d_flex');
-//             let count_i = $(this).children('.card_block_functionality').children('.count_block').children('.count').text()
-//             $(this).children('.after_selected').children('.count_after_selected').text(count_i)
-//         }
-//     }
-// })
-
-// $('body').on('click', function () {
-//     if ($(this).children('.shop_block_content').children('.container').children('.main_container').children('.shop_right_menu_block').children('.cards_block').children('.card').children('.card_block_functionality.card_block_functionality_active').hasClass('card_block_functionality_active')) {
-//         $(this).children('.shop_block_content').children('.container').children('.main_container').children('.shop_right_menu_block').children('.cards_block').children('.card').children('.card_block_functionality.card_block_functionality_active').addClass('d_none');
-//         $(this).children('.after_selected').addClass('d_flex');
-//         let count_i = $(this).children('.card_block_functionality').children('.count_block').children('.count').text();
-//         $(this).children('.after_selected').children('.count_after_selected').text(count_i);
-//         console.log('this no work');
-//     }
-// }).children('.shop_block_content').children('.container').children('.main_container').children('.shop_right_menu_block').children('.cards_block').children('.card').children('.card_block_functionality').on('click', function (event) {
-//     event.stopPropagation();
-// });
 
 
 // Window Width
