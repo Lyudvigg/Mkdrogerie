@@ -1159,6 +1159,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     color: #fff;
     text-transform: uppercase;
     line-height: .8;
+    padding: 6px 3px 6px 8px;
 }
 
 .product_discount_actioned {
