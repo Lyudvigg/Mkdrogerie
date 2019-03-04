@@ -1643,7 +1643,7 @@ div[slider]>input[type=range]::-ms-tooltip {
 }
 
 .bottom_pagination_block .pagination_page_count_block {
-    max-width: 451px;
+    max-width: 300px;
     width: 100%;
     display: flex;
     justify-content: space-between;
