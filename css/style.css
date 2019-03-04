@@ -1431,7 +1431,7 @@ div[slider]>input[type=range]::-ms-tooltip {
 .page_count {
     width: 32px;
     height: 32px;
-    border: 1px solid #90949C;
+    border: 1px solid rgba(144,148,156,0.5);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1441,12 +1441,21 @@ div[slider]>input[type=range]::-ms-tooltip {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.page_count:hover,.pagination_next_block:hover {
+    border: 1px solid rgba(144,148,156,1);
 }
 
 .pagination_next_block {
     width: 109px;
     height: 32px;
-    border: 1px solid #90949C;
+    border: 1px solid rgba(144,148,156,0.5);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1457,6 +1466,11 @@ div[slider]>input[type=range]::-ms-tooltip {
     align-items: center;
     justify-content: space-between;
     padding: 0 12px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .page_count_text {
