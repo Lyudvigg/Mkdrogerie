@@ -1178,7 +1178,6 @@ div[slider]>input[type=range]::-ms-tooltip {
 
 .Card__img-block {
     width: 100%;
-    min-height: 255px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1283,7 +1282,16 @@ div[slider]>input[type=range]::-ms-tooltip {
 
 .delete_icon, .minuse_icon {
     font-size: 18px;
-    color: #888;
+    color: rgb(223, 204, 204);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.delete_icon:hover, .minuse_icon:hover {
+    color: #EC2839;
 }
 
 .minuse_block, .delete_icon_block, .count_block {
@@ -1320,7 +1328,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     font-size: 26px;
     color: #83B735;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .card_btn_icon {
