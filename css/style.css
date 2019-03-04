@@ -770,7 +770,7 @@ header nav {
     -o-border-radius: 3px;
 }
 
-.filter_block_title {
+.block_title {
     font-family: 'openSans_bold';
     font-size: 16px;
     color: #2D2A2A;
@@ -935,7 +935,7 @@ header nav {
     height: 4px;
     border-radius: 5px;
     text-align: left;
-    margin: 20px 0 10px 0;
+    margin: 0px 0 10px 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -1112,10 +1112,11 @@ div[slider]>input[type=range]::-ms-tooltip {
     color: #EC2839;
 }
 
-.preis_title {
+.block_title {
     font-family: 'openSans_bold';
     font-size: 16px;
     color: #2D2A2A;
+    margin-bottom: 20px;
 }
 
 /*===============Card============*/
