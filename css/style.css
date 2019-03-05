@@ -1461,10 +1461,6 @@ div[slider]>input[type=range]::-ms-tooltip {
     border: 1px solid rgba(144, 148, 156, 1);
 }
 
-.page_count:hover {
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
-}
-
 .pagination_next_block:disabled:hover {
     border: 1px solid rgba(144, 148, 156, 0.5) !important;
 }
@@ -1647,10 +1643,6 @@ div[slider]>input[type=range]::-ms-tooltip {
 .form-control:focus {
     border-color: #ec2839;
     box-shadow: 0 0 0 0.2rem rgba(236, 40, 57, 0.25);
-}
-
-.page_count:hover {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
 
 .pagination_prev_block_text {
