@@ -119,6 +119,13 @@
     .card_btn, .card_block_functionality, .after_selected {
         width: calc(100% - 51px);
     }
+    .bottom_pagination_block .pagination_page_block {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .pagination_page_text {
+        margin-bottom: 15px;
+    }
     /*==============footer==============*/
     .footer_content__itemss {
         padding-top: 35px;
@@ -138,10 +145,6 @@
     }
     .shop_right_menu_block {
         margin-left: 0;
-    }
-    .bottom_pagination_block .pagination_page_block {
-        flex-direction: column;
-        margin-bottom: 25px;
     }
     /*=============Header============*/
     header nav, .header_bottom_block {
@@ -202,7 +205,7 @@
     }
 }
 
-@media (max-width: 500px ){
+@media (max-width: 500px) {
     .card {
         width: 100%;
     }
@@ -213,7 +216,23 @@
     .plus_block, .count_block, .delete_icon_block, .minuse_block {
         width: 65px;
     }
-    .card_block_functionality  {
+    .card_block_functionality {
         justify-content: space-between;
+    }
+    .top_icons {
+        flex-wrap: wrap;
+    }
+    .top_icons a {
+        width: 21%;
+        margin: 0 2% 25px;
+        margin-bottom: 25px;
+    }
+    .Newsletter_section_content__items__title {
+        font-size: 22px;
+        text-align: center;
+    }
+    .Newsletter_section_content__items_text {
+        font-size: 14px;    
+        text-align: center;
     }
 }
