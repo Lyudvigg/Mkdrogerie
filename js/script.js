@@ -127,17 +127,22 @@ $(window).on('resize', function (e) {
 
 /*==============Mobile Menu=============*/
 
-$('.close_header_menu').on('click', function () {
-    $('.mobile_menu_block').css({ "opacity": "0", "visibility": "hidden", "transition": ".5s" });
-    if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
-        $('body').css({ "overflow": "auto" });
-    }
-})
-
+let counter = 0;
 $('.toggler_menu').on('click', function () {
-    $('.mobile_menu_block').css({ "opacity": "1", "visibility": "visible", "transition": ".5s" });
-    $('.mobile_menu_block.opacity_n').removeClass('opacity_n');
-    if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
-        $('body').css({ "overflow": "hidden" });
+    counter++;
+    if (counter % 2 !== 0) {
+        $('.mobile_menu_block').css({ "opacity": "1", "visibility": "visible", "transition": ".5s" });
+        $('.mobile_menu_block.opacity_n').removeClass('opacity_n');
+        if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
+            $('body').css({ "overflow": "hidden" });
+        }
     }
+    else {
+        $('.mobile_menu_block').css({ "opacity": "0", "visibility": "hidden", "transition": ".5s" });
+        if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
+            $('body').css({ "overflow": "auto" });
+        }
+    }
+
 })
+//close_header_menu

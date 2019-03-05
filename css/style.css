@@ -114,7 +114,33 @@ body {
     height: 100%;
     overflow-y: auto;
     background: #fff;
-    padding: 55px 15px;
+    top: 54px;
+}
+
+.accordion.menu_mobile li:first-child .shop_left_menu_link {
+    border-top: 1px solid #EBEBEB;
+}
+
+.collapse.show {
+    background: #EDEDED;
+}
+
+.mobile_menu_block .shop_left_menu_link_icon {
+    font-size: 13px;
+    color: #4D4D4D;
+}
+
+.mobile_menu_block .submenu li a {
+    color: #333333;
+    font-size: 13px;
+}
+
+.text-uppercase.shop_left_menu_link {
+    background: #F4F4F4;
+}
+
+.text-uppercase.shop_left_menu_link.collapsed {
+    background: #fff;
 }
 
 .close_header_menu {
@@ -158,7 +184,7 @@ body {
 }
 
 .menu_mobile {
-    width: auto !important;
+    width: 100% !important;
 }
 
 /*=============Header===========*/
@@ -415,7 +441,6 @@ header nav {
 
 .mobile_header {
     height: 55px;
-    background: #EC2839;
     display: flex;
     align-items: center;
 }
@@ -427,13 +452,27 @@ header nav {
 }
 
 .toggler_menu_icon {
-    font-size: 22px;
+    font-size: 14px;
     color: #fff;
     cursor: pointer;
 }
 
+.toggler_menu {
+    width: 33px;
+    height: 31px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    background: #EC2839;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .mobile_logo {
-    color: #fff;
+    color: #EC2839;
     font-size: 22px;
 }
 
@@ -447,18 +486,26 @@ header nav {
 }
 
 .mobile_header_CHF_block_icon {
-    font-size: 26px;
-    color: #fff;
+    font-size: 18px;
+    color: #757575;
 }
 
 .mobile_header_CHF_block .header_warenkorb_count_block {
-    background: #fff;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(236, 40, 57, 0.29);
+}
+
+.header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 .mobile_header_CHF_block .header_warenkorb_count_block_text {
     font-size: 11px;
-    color: #EC2839;
     text-align: center;
 }
 
@@ -754,6 +801,10 @@ header nav {
 }
 
 .shop_left_menu_link:hover .shop_left_menu_link_text {
+    color: #E42737 !important;
+}
+
+.shop_left_menu_link:hover .shop_left_menu_link_icon {
     color: #E42737 !important;
 }
 
