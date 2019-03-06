@@ -2239,6 +2239,11 @@ footer {
 
 .footer_contact_link_second {
     font-family: 'openSans_regular';
+    line-height: 24px;
+}
+
+.footer_contact_link_second_icons {
+    line-height: 24px;
 }
 
 .footer_contact_link_icon {
