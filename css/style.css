@@ -423,6 +423,54 @@ body {
     margin-bottom: 20px;
 }
 
+.dropdown-toggle::after {
+    display: none;
+}
+
+.modal .sort_block {
+    flex-direction: column;
+}
+
+.modal .anzigen_block {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+}
+
+.modal .pagination_block_text {
+    width: 60px;
+}
+
+.modal .dropdown-item {
+    font-size: 14px;
+}
+
+.second_modal_close_btn {
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    color: #fff;
+    background: #90949C;
+    padding: 10px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.second_modal_save_btn {
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    color: #fff;
+    background: #E72738;
+    padding: 10px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
 /*================Mobile User Block=================*/
 
 .mobile_user_block_title {

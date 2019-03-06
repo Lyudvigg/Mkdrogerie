@@ -124,14 +124,66 @@
                             <span class="inp_range_block_second_inp">50</span></h5>
                     </div>
                 </div>
-                <div class="modal-footer d_none">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
             </div>
         </div>
     </div>
     <!--================Modal 2==========-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter_second" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title block_title" id="exampleModalLongTitle">Page options</h5>
+                    <div class="close_search_block" data-dismiss="modal" aria-label="Close">
+                        <i class="mcdrogerie-icon-uniEC2A close_search_block_icon"></i>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="sort_block">
+                        <div class="anzigen_block">
+                            <span class="pagination_block_text">Anzigen</span>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle anzigen_block_select" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    60
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">60</a>
+                                    <a class="dropdown-item" href="#">120</a>
+                                    <a class="dropdown-item" href="#">180</a>
+                                    <a class="dropdown-item" href="#">Alle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sortieren_block">
+                            <span class="pagination_block_text">Sortieren</span>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle sortieren_block_select" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    60
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Name aufsteigend (A-Z)</a>
+                                    <a class="dropdown-item" href="#">Name absteigend (Z-A)</a>
+                                    <a class="dropdown-item" href="#">Preis aufsteigend</a>
+                                    <a class="dropdown-item" href="#">Preis absteigend</a>
+                                    <a class="dropdown-item" href="#">Beliebtheit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="second_modal_close_btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="second_modal_save_btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--==========mobile_menu============-->
     <div class="mobile_menu_block opacity_n">
@@ -2059,7 +2111,7 @@
                                 <div class="anzigen_block">
                                     <span class="pagination_block_text">Anzigen</span>
                                     <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle anzigen_block_select"
+                                        <button class="btn dropdown-toggle anzigen_block_select"
                                             type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
                                             60
@@ -2075,7 +2127,7 @@
                                 <div class="sortieren_block">
                                     <span class="pagination_block_text">Sortieren</span>
                                     <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle sortieren_block_select"
+                                        <button class="btn dropdown-toggle sortieren_block_select"
                                             type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
                                             60
@@ -2098,7 +2150,7 @@
                                 data-target="#exampleModalCenter">
                                 Filters
                             </button>
-                            <button class="pagination_block_mobile_options_btn">
+                            <button class="pagination_block_mobile_options_btn" data-toggle="modal" data-target="#exampleModalCenter_second">
                                 Options
                             </button>
                         </div>
