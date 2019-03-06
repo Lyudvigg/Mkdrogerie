@@ -169,9 +169,6 @@
         top: 0;
         right: -4px;
     }
-    .shop_right_shop_block {
-        display: none;
-    }
     .page_guide_block {
         display: none;
     }
@@ -181,6 +178,17 @@
     }
     .cards_block {
         margin-top: 35px;
+    }
+    .pagination_block {
+        display: none;
+    }
+    .shop_right_shop_block {
+        padding: 15px;
+        margin-top: 35px;
+    }
+    .shop_right_shop__title {
+        font-size: 18px;
+
     }
 }
 
