@@ -283,4 +283,7 @@
     .product_discount_block {
         display: none;
     }
+    .header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
+        width: 30px;
+    }
 }
