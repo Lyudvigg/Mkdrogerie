@@ -270,10 +270,6 @@
     .mobile_actioned_btn {
         display: block;
     }
-    .card {
-        background: transparent;
-        box-shadow: none;
-    }
     .product_discount_block {
         display: none;
     }
