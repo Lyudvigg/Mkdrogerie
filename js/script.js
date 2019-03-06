@@ -130,5 +130,15 @@ $('.header_search_mobile_block').on('click', function () {
 })
 
 $('.close_search_block').on('click', function () {
-    $('.mobile_search_menu, .menu_mobile_body_opacity_efect').css({ "opacity": "0", "visibility": "hidden" })
+    $('.mobile_search_menu, .menu_mobile_body_opacity_efect, .mobile_user_block').css({ "opacity": "0", "visibility": "hidden" })
+})
+let user_counter = 0;
+$('.header_mobile_user_block').on('click', function () {
+    user_counter++;
+    if (user_counter % 2 !== 0) {
+        $('.mobile_user_block, .menu_mobile_body_opacity_efect').css({ "opacity": "1", "visibility": "visible" });
+    }
+    else {
+        $('.mobile_user_block, .menu_mobile_body_opacity_efect').css({ "opacity": "0", "visibility": "hidden" })
+    }
 })

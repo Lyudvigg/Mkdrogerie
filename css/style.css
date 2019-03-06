@@ -233,7 +233,6 @@ body {
 
 .mobile_search_menu_form_block {
     padding-bottom: 15px;
-    border-bottom: 1px solid #F0F0F0;
     padding-top: 18px;
 }
 
@@ -249,7 +248,7 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    margin: 11px auto 0px;
+    margin: 0px auto 0px;
     cursor: pointer;
 }
 
@@ -260,12 +259,174 @@ body {
 
 .mobile_search_menu {
     padding: 10px;
+    padding-bottom: 0;
     border-bottom: 1px solid #9C9C9C;
     position: absolute;
     z-index: 99;
     background: #fff;
     width: 100%;
     top: 55px;
+}
+
+.close_search_block_items {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background: #FAFAFA;
+    border-top: 1px solid #F0F0F0;
+}
+
+.mobile_user_block_checkbox {
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    color: #2D2A2A;
+    margin-top: 17px;
+    margin-bottom: 23px;
+}
+
+.mobile_user_block_btn {
+    font-family: 'openSans_bold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 149px;
+    height: 42px;
+    background: #EC2839;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_user_block_btn_icon {
+    margin-left: 13px;
+}
+
+.mobile_user_block_btn_register {
+    font-family: 'openSans_bold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 140px;
+    height: 42px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_user_block_btn_group {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.mobile_header_user_bottom_text {
+    font-family: 'openSans_regular';
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    margin: 21px auto 22px;
+    display: block;
+}
+
+.mobile_actioned_btn {
+    width: 81px;
+    height: 22px;
+    font-family: 'openSans_SemiBold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #EC2839;
+    display: none;
+    
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+/*================Mobile User Block=================*/
+
+.mobile_user_block_title {
+    font-family: 'openSans_bold';
+    font-size: 14px;
+    color: #2D2A2A;
+    text-transform: uppercase;
+}
+
+.mobile_user_block {
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    top: 55px;
+    z-index: 999;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.mobile_user_block_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile_user_block_form_inp_email {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #F7F7F7;
+    padding: 0 10px;
+}
+
+.mobile_user_block_form_inp_password {
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #fff;
+    padding: 0 10px;
+    height: 42px;
+}
+
+.mobile_user_block_form_inp_email_text {
+    font-family: 'openSans_SemiBold';
+    font-size: 14px;
+    color: #2D2A2A;
+    line-height: 1.714;
+    margin-top: 22px;
+}
+
+.mobile_user_block_form_inp_password_text {
+    font-family: 'openSans_SemiBold';
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+    line-height: 1.714;
 }
 
 /*=============Header===========*/

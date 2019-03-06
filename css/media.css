@@ -179,6 +179,9 @@
     header {
         border-bottom: 1px solid #F0F0F0;
     }
+    .cards_block {
+        margin-top: 35px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -263,5 +266,15 @@
     }
     .header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
         margin-right: 5px;
+    }
+    .mobile_actioned_btn {
+        display: block;
+    }
+    .card {
+        background: transparent;
+        box-shadow: none;
+    }
+    .product_discount_block {
+        display: none;
     }
 }
