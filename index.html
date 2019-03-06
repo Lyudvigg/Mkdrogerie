@@ -44,7 +44,7 @@
                 <div class="filter_modal_inp_range_block">
                     <h2 class="block_title filter_modal_inp_range_block_title">Preis</h2>
                     <div class="inp_range_block">
-                        <div slider id="slider-distance">
+                        <div slider id="slider-distance_sm">
                             <div>
                                 <div inverse-left style="width:70%;"></div>
                                 <div inverse-right style="width:70%;"></div>
@@ -52,7 +52,7 @@
                                 <span thumb style="left:0%;"></span>
                                 <span thumb style="left:50%;"></span>
                             </div>
-                            <input id="inp_range_block_first_inp" type="range" tabindex="0" value="0" max="100" min="0"
+                            <input id="inp_range_block_first_inp_sm" type="range" tabindex="0" value="0" max="100" min="0"
                                 step="1" oninput="
                                                         this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
                                                         var children = this.parentNode.childNodes[1].childNodes;
@@ -88,7 +88,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title block_title" id="exampleModalLongTitle">Page options</h5>
+                    <h5 class="modal-title block_title">Page options</h5>
                     <div class="close_search_block" data-dismiss="modal" aria-label="Close">
                         <i class="mcdrogerie-icon-uniEC2A close_search_block_icon"></i>
                     </div>
@@ -115,11 +115,11 @@
                             <span class="pagination_block_text">Sortieren</span>
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle sortieren_block_select" type="button"
-                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    id="sortieren_select_btn_sm" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     60
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu" aria-labelledby="sortieren_select_btn_sm">
                                     <a class="dropdown-item" href="#">Name aufsteigend (A-Z)</a>
                                     <a class="dropdown-item" href="#">Name absteigend (Z-A)</a>
                                     <a class="dropdown-item" href="#">Preis aufsteigend</a>
@@ -2065,11 +2065,11 @@
                                     <span class="pagination_block_text">Anzigen</span>
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle anzigen_block_select" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            id="anzigen_select_btn" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             60
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="dropdown-menu" aria-labelledby="anzigen_select_btn">
                                             <a class="dropdown-item" href="#">60</a>
                                             <a class="dropdown-item" href="#">120</a>
                                             <a class="dropdown-item" href="#">180</a>
@@ -2081,11 +2081,11 @@
                                     <span class="pagination_block_text">Sortieren</span>
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle sortieren_block_select" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            id="sortieren_select_btn" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             60
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="dropdown-menu" aria-labelledby="sortieren_select_btn">
                                             <a class="dropdown-item" href="#">Name aufsteigend (A-Z)</a>
                                             <a class="dropdown-item" href="#">Name absteigend (Z-A)</a>
                                             <a class="dropdown-item" href="#">Preis aufsteigend</a>

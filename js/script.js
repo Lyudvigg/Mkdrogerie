@@ -1,7 +1,7 @@
 /*==================Range==================*/
 
-$('#inp_range_block_first_inp').on('input', function () {
-    let inp_range_block_first_inp = $('#inp_range_block_first_inp').val();
+$('#inp_range_block_first_inp_sm').on('input', function () {
+    let inp_range_block_first_inp = $('#inp_range_block_first_inp_sm').val();
     $('.inp_range_block_first_inp').text(inp_range_block_first_inp);
 })
 

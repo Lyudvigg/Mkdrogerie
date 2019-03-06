@@ -956,6 +956,10 @@ header nav {
     color: #EC2839;
 }
 
+.left_menu_hover__items_link:hover {
+    color: #EC2839;
+}
+
 .left_menu_hover_block {
     padding: 35px 40px;
     background: #fff;
@@ -2218,6 +2222,18 @@ footer {
 
 .footer_active_link {
     color: #e74c3c;
+}
+
+.footer_items_link:hover {
+    color: #e74c3c;
+}
+
+a:hover {
+    color: #e74c3c;
+}
+
+.footer_contact_link_third:hover  {
+    text-decoration: underline !important;
 }
 
 .footer_contact_title {
