@@ -175,6 +175,10 @@
     .page_guide_block {
         display: none;
     }
+    /*==========mobile Header========*/
+    header {
+        border-bottom: 1px solid #F0F0F0;
+    }
 }
 
 @media (max-width: 576px) {
