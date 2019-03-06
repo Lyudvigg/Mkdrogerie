@@ -192,6 +192,9 @@
     .pagination_block_mobile {
         display: flex;
     }
+    .header_warenkorb_count_block {
+        right: 7px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -271,7 +274,7 @@
         text-align: center;
     }
     .Newsletter_section_content__items_text {
-        font-size: 14px;    
+        font-size: 14px;
         text-align: center;
     }
     .header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
@@ -283,7 +286,13 @@
     .product_discount_block {
         display: none;
     }
+}
+
+@media (max-width: 380px) {
     .header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
         width: 30px;
+    }
+    .header_warenkorb_count_block{
+        right: -4px;
     }
 }

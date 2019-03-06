@@ -436,6 +436,7 @@ body {
     padding-bottom: 15px;
     border-bottom: 1px solid #f1f1f1;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .modal .pagination_block_text {
@@ -2205,7 +2206,7 @@ footer {
     font-family: 'openSans_regular';
     font-size: 14px;
     color: #222222;
-    line-height: 2.143;
+    line-height: 24px;
 }
 
 .footer_active_link {
@@ -2245,8 +2246,7 @@ footer {
     font-size: 14px;
 }
 
-.footer_contact_link_third {
-    color: #e74c3c;
+.footer_contact_link_third:hover {
     text-decoration: underline;
 }
 
