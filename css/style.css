@@ -1697,6 +1697,10 @@ div[slider]>input[type=range]::-ms-tooltip {
     cursor: pointer;
 }
 
+.count_after_selected {
+    margin-right: 5px;
+}
+
 .plus_block {
     width: 65px;
     border-left: 1px solid #E8E8E8;
