@@ -395,6 +395,34 @@ body {
     margin-bottom: 21px;
 }
 
+/*==============Modal==========*/
+
+.modal .close_search_block {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.modal .block_title {
+    margin-bottom: 0;
+}
+
+.modal-header {
+    padding: 10px;
+    background: #FAFAFA;
+}
+
+.filter_modal_inp_range_block {
+    border-top: 1px solid #F1F1F1;
+}
+
+.filter_modal_inp_range_block {
+    padding: 16px;
+}
+
+.modal .filter_modal_inp_range_block_title {
+    margin-bottom: 20px;
+}
+
 /*================Mobile User Block=================*/
 
 .mobile_user_block_title {

@@ -15,6 +15,119 @@
 </head>
 
 <body>
+    <!-- <div class="filter_block page_block_box_shadows">
+        <h2 class="block_title">Filter</h2>
+        <div class="chackbox_block">
+            <label class="chackbox_block_items">24 Stunden
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="chackbox_block_items">Aktionen
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="chackbox_block_items">Topseller
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="preis page_block_box_shadows">
+        <h2 class="block_title">Preis</h2>
+        <div class="inp_range_block">
+            <div slider id="slider-distance">
+                <div>
+                    <div inverse-left style="width:70%;"></div>
+                    <div inverse-right style="width:70%;"></div>
+                    <div range style="left:0%;right:50%;"></div>
+                    <span thumb style="left:0%;"></span>
+                    <span thumb style="left:50%;"></span>
+                </div>
+                <input id="inp_range_block_first_inp" type="range" tabindex="0" value="0" max="100" min="0" step="1"
+                    oninput="
+                                this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[1].style.width=value+'%';
+                                children[5].style.left=value+'%';
+                                children[7].style.left=value+'%';" />
+
+                <input id="inp_range_block_second_inp" type="range" tabindex="0" value="50" max="100" min="0" step="1"
+                    oninput="
+                                this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                var children = this.parentNode.childNodes[1].childNodes;
+                                children[3].style.width=(100-value)+'%';
+                                children[5].style.right=(100-value)+'%';
+                                children[9].style.left=value+'%';" />
+            </div>
+            <h5 class="inp_range_block_text">von <span class="inp_range_block_first_inp">0</span>
+                bis
+                <span class="inp_range_block_second_inp">50</span></h5>
+        </div>
+    </div> -->
+    <!--=================Popup=================-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title block_title" id="exampleModalLongTitle">Filter</h5>
+                    <div class="close_search_block" data-dismiss="modal" aria-label="Close">
+                        <i class="mcdrogerie-icon-uniEC2A close_search_block_icon"></i>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="chackbox_block">
+                        <label class="chackbox_block_items">24 Stunden
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="chackbox_block_items">Aktionen
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="chackbox_block_items">Topseller
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter_modal_inp_range_block">
+                    <h2 class="block_title filter_modal_inp_range_block_title">Preis</h2>
+                    <div class="inp_range_block">
+                        <div slider id="slider-distance">
+                            <div>
+                                <div inverse-left style="width:70%;"></div>
+                                <div inverse-right style="width:70%;"></div>
+                                <div range style="left:0%;right:50%;"></div>
+                                <span thumb style="left:0%;"></span>
+                                <span thumb style="left:50%;"></span>
+                            </div>
+                            <input id="inp_range_block_first_inp" type="range" tabindex="0" value="0" max="100" min="0"
+                                step="1" oninput="
+                                                        this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                                                        var children = this.parentNode.childNodes[1].childNodes;
+                                                        children[1].style.width=value+'%';
+                                                        children[5].style.left=value+'%';
+                                                        children[7].style.left=value+'%';" />
+
+                            <input id="inp_range_block_second_inp" type="range" tabindex="0" value="50" max="100"
+                                min="0" step="1" oninput="
+                                                        this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                                                        var children = this.parentNode.childNodes[1].childNodes;
+                                                        children[3].style.width=(100-value)+'%';
+                                                        children[5].style.right=(100-value)+'%';
+                                                        children[9].style.left=value+'%';" />
+                        </div>
+                        <h5 class="inp_range_block_text">von <span class="inp_range_block_first_inp">0</span>
+                            bis
+                            <span class="inp_range_block_second_inp">50</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--==========mobile_menu============-->
     <div class="mobile_menu_block opacity_n">
         <ul id="faq-list" class="accordion menu_mobile">
@@ -1976,8 +2089,9 @@
                         </div>
                         <div class="pagination_block_mobile">
                             <!--========stex======-->
-                            <button class="pagination_block_mobile_filter_btn">
-                                    Filters
+                            <button class="pagination_block_mobile_filter_btn" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                                Filters
                             </button>
                             <button class="pagination_block_mobile_options_btn">
                                 Options
