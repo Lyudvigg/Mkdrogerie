@@ -188,7 +188,9 @@
     }
     .shop_right_shop__title {
         font-size: 18px;
-
+    }
+    .pagination_block_mobile {
+        display: flex;
     }
 }
 
