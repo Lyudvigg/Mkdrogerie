@@ -547,6 +547,11 @@ header {
     position: relative;
 }
 
+.header_menu_logo {
+    display: flex;
+    align-items: center;
+}
+
 .header_warenkorb_count_block {
     background: #EC2839;
     width: 16px;
