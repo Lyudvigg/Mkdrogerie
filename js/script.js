@@ -10,6 +10,16 @@ $('#inp_range_block_second_inp').on('input', function () {
     $('.inp_range_block_second_inp').text(inp_range_block_first_inp);
 })
 
+$('.inp_range_block_first_inp_display').on('input', function () {
+    let inp_range_block_first_inp = $('.inp_range_block_first_inp_display').val();
+    $('.inp_range_block_first_inp').text(inp_range_block_first_inp);
+})
+
+$('.inp_range_block_second_inp_display').on('input', function () {
+    let inp_range_block_first_inp = $('.inp_range_block_second_inp_display').val();
+    $('.inp_range_block_second_inp').text(inp_range_block_first_inp);
+})
+
 /*=================Card Functionality==================*/
 
 $('.card_btn').on('click', function () {
