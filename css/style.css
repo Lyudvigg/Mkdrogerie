@@ -2396,7 +2396,7 @@ a:hover {
 }
 
 .bottom_footer_text {
-    font-family: 'openSans_italic';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 12px;
@@ -2574,10 +2574,10 @@ a:hover {
     .header_bottom_block__items {
         margin-right: 30px;
     }
-    /*==============footer==============*/
-    .footer_content__itemss {
-        padding-top: 35px;
+    .pagination_next_block {
+        padding: 0 5px;
     }
+    /*==============footer==============*/
     .footer_content__itemss:first-child {
         padding-top: 0;
     }
@@ -2640,6 +2640,10 @@ a:hover {
     .header_warenkorb_count_block {
         right: 7px;
     }
+    /*=============footer===========*/
+    .footer_content__itemss {
+        padding-top: 35px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -2647,6 +2651,9 @@ a:hover {
     .footer_content__itemss {
         width: 100%;
         padding-top: 35px !important;
+    }
+    .first-footer_content__itemss {
+        padding-top: 0 !important;
     }
     .footer_logo_icon {
         display: none;
