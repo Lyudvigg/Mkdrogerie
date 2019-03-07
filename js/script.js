@@ -107,21 +107,30 @@ $(window).on('resize', function (e) {
     }
 });
 
+if ($(window).width() <= 768) {
+    $('.Second_faq').removeAttr('id');
+    $('.menu_mobile').attr("id", "faq-list")
+}
+else if ($(window).width() > 768) {
+    $('.Second_faq').attr("id", "faq-list");
+    $('.menu_mobile').removeAttr('id');
+}
+
 /*==============Mobile Menu=============*/
 
 let counter = 0;
 $('.toggler_menu').on('click', function () {
     counter++;
     if (counter % 2 !== 0) {
-        $('.mobile_menu_block').css({ "opacity": "1", "visibility": "visible", "transition": ".5s" });
-        $('.mobile_menu_block.opacity_n').removeClass('opacity_n');
-        if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
+        $('.category-menu-modal').css({ "opacity": "1", "visibility": "visible", "transition": ".5s" });
+        $('.category-menu-modal.opacity_n').removeClass('opacity_n');
+        if ($(".category-menu-modal").hasClass('opacity_n') == false) {
             $('body').css({ "overflow": "hidden" });
         }
     }
     else {
-        $('.mobile_menu_block').css({ "opacity": "0", "visibility": "hidden", "transition": ".5s" });
-        if ($(".mobile_menu_block").hasClass('opacity_n') == false) {
+        $('.category-menu-modal').css({ "opacity": "0", "visibility": "hidden", "transition": ".5s" });
+        if ($(".category-menu-modal").hasClass('opacity_n') == false) {
             $('body').css({ "overflow": "auto" });
         }
     }
@@ -132,23 +141,23 @@ let search_counter = 0;
 $('.header_search_mobile_block').on('click', function () {
     search_counter++;
     if (search_counter % 2 !== 0 ) {
-        $('.mobile_search_menu, .menu_mobile_body_opacity_efect').css({ "opacity": "1", "visibility": "visible" })
+        $('.search_modal, .mobile_opacity_efect').css({ "opacity": "1", "visibility": "visible" })
     }
     else {
-        $('.mobile_search_menu, .menu_mobile_body_opacity_efect').css({ "opacity": "0", "visibility": "hidden" })
+        $('.search_modal, .mobile_opacity_efect').css({ "opacity": "0", "visibility": "hidden" })
     }
 })
 
 $('.close_search_block').on('click', function () {
-    $('.mobile_search_menu, .menu_mobile_body_opacity_efect, .mobile_user_block').css({ "opacity": "0", "visibility": "hidden" })
+    $('.search_modal, .mobile_opacity_efect, .Account-modal').css({ "opacity": "0", "visibility": "hidden" })
 })
 let user_counter = 0;
-$('.header_mobile_user_block').on('click', function () {
+$('.header_Account-modal').on('click', function () {
     user_counter++;
     if (user_counter % 2 !== 0) {
-        $('.mobile_user_block, .menu_mobile_body_opacity_efect').css({ "opacity": "1", "visibility": "visible" });
+        $('.Account-modal, .mobile_opacity_efect').css({ "opacity": "1", "visibility": "visible" });
     }
     else {
-        $('.mobile_user_block, .menu_mobile_body_opacity_efect').css({ "opacity": "0", "visibility": "hidden" })
+        $('.Account-modal, .mobile_opacity_efect').css({ "opacity": "0", "visibility": "hidden" })
     }
 })

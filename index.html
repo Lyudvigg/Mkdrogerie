@@ -17,7 +17,7 @@
 <body>
 
     <!--=========== Modal======== -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    <div class="modal fade Filters-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -31,15 +31,15 @@
                     <div class="chackbox_block">
                         <label class="chackbox_block_items">24 Stunden
                             <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
+                            <span class="checkmark mcdrogerie-icon-check_box"></span>
                         </label>
                         <label class="chackbox_block_items">Aktionen
                             <input type="checkbox">
-                            <span class="checkmark"></span>
+                            <span class="checkmark mcdrogerie-icon-check_box"></span>
                         </label>
                         <label class="chackbox_block_items">Topseller
                             <input type="checkbox">
-                            <span class="checkmark"></span>
+                            <span class="checkmark mcdrogerie-icon-check_box"></span>
                         </label>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
     <!--================Modal 2==========-->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter_second" tabindex="-1" role="dialog"
+    <div class="modal fade Page-options-modal " id="exampleModalCenter_second" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -104,6 +104,7 @@
                                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     60
+                                    <i class="mcdrogerie-icon-uniEC3A select_arrow"></i>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" href="#">60</a>
@@ -119,7 +120,8 @@
                                 <button class="btn dropdown-toggle sortieren_block_select" type="button"
                                     id="sortieren_select_btn_sm" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
-                                    60
+                                    Beliebtheit
+                                    <i class="mcdrogerie-icon-uniEC3A select_arrow"></i>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="sortieren_select_btn_sm">
                                     <a class="dropdown-item" href="#">Name aufsteigend (A-Z)</a>
@@ -141,7 +143,7 @@
     </div>
 
     <!--==========mobile_menu============-->
-    <div class="mobile_menu_block opacity_n">
+    <div class="category-menu-modal opacity_n">
         <ul id="faq-list" class="accordion menu_mobile">
             <li>
                 <a data-toggle="collapse" class="collapsed text-uppercase shop_left_menu_link" href="#faq8">
@@ -307,8 +309,8 @@
             </li>
         </ul>
     </div>
-    <div class="mobile_search_menu opacity_n">
-        <form class="mobile_search_menu_form_block">
+    <div class="search_modal search_modal opacity_n">
+        <form class="search_modal_form_block">
             <input type="text" placeholder="Suche in 35.000 Artikeln von über 1000 Marken..."
                 class="mobile_search_block_inp">
             <button class="mobile_search_block_btn">Anmelden</button>
@@ -319,30 +321,30 @@
             </div>
         </div>
     </div>
-    <div class="mobile_user_block opacity_n">
-        <h3 class="mobile_user_block_title">
+    <div class="Account-modal opacity_n">
+        <h3 class="Account-modal_title">
             ANMELDEN
         </h3>
-        <form class="mobile_user_block_form">
-            <label class="mobile_user_block_form_inp_email_text">
+        <form class="Account-modal_form">
+            <label class="Account-modal_form_inp_email_text">
                 Email
             </label>
-            <input type="text" class="mobile_user_block_form_inp_email">
-            <label class="mobile_user_block_form_inp_password_text">
+            <input type="text" class="Account-modal_form_inp_email">
+            <label class="Account-modal_form_inp_password_text">
                 Passwort
             </label>
-            <input type="password" class="mobile_user_block_form_inp_password">
-            <label class="chackbox_block_items mobile_user_block_checkbox">
+            <input type="password" class="Account-modal_form_inp_password">
+            <label class="chackbox_block_items Account-modal_checkbox">
                 <input type="checkbox" checked>
                 <span class="checkmark"></span>
                 Angemeldet bleiben
             </label>
-            <div class="mobile_user_block_btn_group">
-                <button class="mobile_user_block_btn">
+            <div class="Account-modal_btn_group">
+                <button class="Account-modal_btn">
                     Anmelden
-                    <i class="mcdrogerie-icon-uniEC44 mobile_user_block_btn_icon"></i>
+                    <i class="mcdrogerie-icon-uniEC44 Account-modal_btn_icon"></i>
                 </button>
-                <button class="mobile_user_block_btn_register">
+                <button class="Account-modal_btn_register">
                     REGISTRIEREN
                 </button>
             </div>
@@ -356,7 +358,7 @@
             </div>
         </div>
     </div>
-    <div class="menu_mobile_body_opacity_efect opacity_n"></div>
+    <div class="mobile_opacity_efect opacity_n"></div>
     <!--=============Header============-->
     <header>
         <nav>
@@ -1828,7 +1830,7 @@
                         <i class="mcdrogerie-icon-mcdeogerie-logo mobile_logo"></i>
                     </a>
                     <div class="mobile_header_CHF_block">
-                        <div class="header_mobile_user_block">
+                        <div class="header_Account-modal">
                             <i class="mcdrogerie-icon-user header_user_icon"></i>
                         </div>
                         <div class="mobile_header_CHF_block_icon_block">
@@ -1987,15 +1989,15 @@
                             <div class="chackbox_block">
                                 <label class="chackbox_block_items">24 Stunden
                                     <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
+                                    <span class="checkmark mcdrogerie-icon-check_box"></span>
                                 </label>
                                 <label class="chackbox_block_items">Aktionen
                                     <input type="checkbox">
-                                    <span class="checkmark"></span>
+                                    <span class="checkmark mcdrogerie-icon-check_box"></span>
                                 </label>
                                 <label class="chackbox_block_items">Topseller
                                     <input type="checkbox">
-                                    <span class="checkmark"></span>
+                                    <span class="checkmark mcdrogerie-icon-check_box"></span>
                                 </label>
                             </div>
                         </div>
@@ -2070,6 +2072,7 @@
                                             id="anzigen_select_btn" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             60
+                                            <i class="mcdrogerie-icon-uniEC3A select_arrow"></i>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="anzigen_select_btn">
                                             <a class="dropdown-item" href="#">60</a>
@@ -2085,7 +2088,8 @@
                                         <button class="btn dropdown-toggle sortieren_block_select" type="button"
                                             id="sortieren_select_btn" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            60
+                                            Beliebtheit
+                                            <i class="mcdrogerie-icon-uniEC3A select_arrow"></i>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="sortieren_select_btn">
                                             <a class="dropdown-item" href="#">Name aufsteigend (A-Z)</a>

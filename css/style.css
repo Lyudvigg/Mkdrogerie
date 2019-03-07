@@ -109,7 +109,7 @@ body {
 
 /*===============mobile_menu================*/
 
-.mobile_menu_block {
+.category-menu-modal {
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -123,12 +123,12 @@ body {
     border-top: 1px solid #EBEBEB;
 }
 
-.mobile_menu_block .shop_left_menu_link_icon {
+.category-menu-modal .shop_left_menu_link_icon {
     font-size: 13px;
     color: #4D4D4D;
 }
 
-.mobile_menu_block .submenu li a {
+.category-menu-modal .submenu li a {
     color: #333333;
     font-size: 13px;
 }
@@ -187,7 +187,7 @@ body {
 
 /*===================mobile Search block====================*/
 
-.menu_mobile_body_opacity_efect {
+.mobile_opacity_efect {
     background-color: rgba(0, 0, 0, .41);
     width: 100%;
     position: fixed;
@@ -272,7 +272,7 @@ body {
     -o-border-radius: 3px;
 }
 
-.mobile_search_menu_form_block {
+.search_modal_form_block {
     padding-bottom: 15px;
     padding-top: 18px;
 }
@@ -298,7 +298,7 @@ body {
     color: #fff;
 }
 
-.mobile_search_menu {
+.search_modal {
     padding: 10px;
     padding-bottom: 0;
     border-bottom: 1px solid #9C9C9C;
@@ -318,7 +318,7 @@ body {
     border-top: 1px solid #F0F0F0;
 }
 
-.mobile_user_block_checkbox {
+.Account-modal_checkbox {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -327,7 +327,7 @@ body {
     margin-bottom: 23px;
 }
 
-.mobile_user_block_btn {
+.Account-modal_btn {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -347,11 +347,11 @@ body {
     justify-content: center;
 }
 
-.mobile_user_block_btn_icon {
+.Account-modal_btn_icon {
     margin-left: 13px;
 }
 
-.mobile_user_block_btn_register {
+.Account-modal_btn_register {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -370,7 +370,7 @@ body {
     align-items: center;
 }
 
-.mobile_user_block_btn_group {
+.Account-modal_btn_group {
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -488,7 +488,7 @@ body {
 
 /*================Mobile User Block=================*/
 
-.mobile_user_block_title {
+.Account-modal_title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -496,7 +496,7 @@ body {
     text-transform: uppercase;
 }
 
-.mobile_user_block {
+.Account-modal {
     padding: 10px;
     background: #fff;
     position: absolute;
@@ -506,13 +506,13 @@ body {
     padding-bottom: 0;
 }
 
-.mobile_user_block_form {
+.Account-modal_form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.mobile_user_block_form_inp_email {
+.Account-modal_form_inp_email {
     width: 100%;
     height: 42px;
     border: 1px solid #DEDEDE;
@@ -525,7 +525,7 @@ body {
     padding: 0 10px;
 }
 
-.mobile_user_block_form_inp_password {
+.Account-modal_form_inp_password {
     width: 100%;
     border: 1px solid #DEDEDE;
     border-radius: 3px;
@@ -538,7 +538,7 @@ body {
     height: 42px;
 }
 
-.mobile_user_block_form_inp_email_text {
+.Account-modal_form_inp_email_text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -547,7 +547,7 @@ body {
     margin-top: 22px;
 }
 
-.mobile_user_block_form_inp_password_text {
+.Account-modal_form_inp_password_text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -881,7 +881,7 @@ header nav {
     box-shadow: 0px 5px 10px 0px rgba(236, 40, 57, 0.29);
 }
 
-.header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
+.header_Account-modal, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
     width: 50px;
     display: flex;
     justify-content: center;
@@ -1336,52 +1336,26 @@ header nav {
     -o-border-radius: 2px;
 }
 
-/* On mouse-over, add a grey background color */
-
-.chackbox_block_items:hover input~.checkmark {
-    background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-
-.chackbox_block_items input:checked~.checkmark {
-    background-color: #EC2839;
-    border: 1px solid #EC2839;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-
-.checkmark:after {
-    content: "";
-    position: absolute;
+.mcdrogerie-icon-check_box:before {
     display: none;
 }
 
-/* Show the checkmark when checked */
+.chackbox_block_items input:checked~.mcdrogerie-icon-check_box {
+    border: none;
+}
+
+.chackbox_block_items input:checked~.mcdrogerie-icon-check_box:before {
+    display: block;
+    color: #EC2839;
+    vertical-align: middle;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    font-size: 24px;
+}
 
 .chackbox_block_items input:checked~.checkmark:after {
     display: block;
-}
-
-/* Style the checkmark/indicator */
-
-.chackbox_block_items .checkmark:after {
-    left: 0px;
-    top: 0px;
-    width: 11px;
-    height: 7px;
-    background-image: url('../img/filter_checkbox_icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    right: 0;
-    margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
 }
 
 /*============preis==============*/
@@ -2008,7 +1982,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     color: #2D2A2A;
     width: 66px;
     height: 31px;
-    background: url('../img/Shop_select_arrow.png') no-repeat right #FBFBFB;
+    background: #FBFBFB;
     -webkit-appearance: none;
     padding: 0 10px 0 12px;
     background-position-x: 44px;
@@ -2043,7 +2017,7 @@ div[slider]>input[type=range]::-ms-tooltip {
     color: #2D2A2A;
     width: 191px;
     height: 31px;
-    background: url('../img/Shop_select_arrow.png') no-repeat right #FBFBFB;
+    background: #FBFBFB;
     -webkit-appearance: none;
     padding: 0 10px 0 12px;
     background-position-x: 167px;
@@ -2057,6 +2031,11 @@ div[slider]>input[type=range]::-ms-tooltip {
     align-items: center;
     justify-content: space-between;
     border: 1px solid #F4F5F8;
+}
+
+.select_arrow {
+    font-size: 11px;
+    color: #666674;
 }
 
 .sortieren_block {
@@ -2266,14 +2245,15 @@ div[slider]>input[type=range]::-ms-tooltip {
 }
 
 .top_icons--items_fourth {
-    width: 117px;   
-    height: 25px;   
+    width: 117px;
+    height: 25px;
 }
 
 .top_icons--items_fifth {
     width: 105px;
     height: 46px;
 }
+
 /*=================Footer================*/
 
 .footer_content_block {
@@ -2317,7 +2297,7 @@ a:hover {
     color: #e74c3c;
 }
 
-.footer_contact_link_third:hover  {
+.footer_contact_link_third:hover {
     text-decoration: underline !important;
 }
 
@@ -2452,6 +2432,7 @@ a:hover {
     width: 36px;
     height: 43px;
 }
+
 /*=======================Media===================*/
 
 @media (min-width:1200px) {
@@ -2534,6 +2515,9 @@ a:hover {
     .card__price {
         margin-top: 15px;
     }
+    .left_menu_hover_block {
+        left: 210px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -2559,9 +2543,6 @@ a:hover {
     }
     .header_bottom_block__items_text, .header_bottom_block_text {
         font-size: 13px;
-    }
-    .left_menu_hover_block {
-        left: 200px;
     }
     .left_menu_right_text {
         font-size: 12px;
@@ -2746,7 +2727,7 @@ a:hover {
         font-size: 14px;
         text-align: center;
     }
-    .header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
+    .header_Account-modal, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
         margin-right: 5px;
     }
     .mobile_actioned_btn {
@@ -2758,7 +2739,7 @@ a:hover {
 }
 
 @media (max-width: 380px) {
-    .header_mobile_user_block, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
+    .header_Account-modal, .mobile_header_CHF_block_icon_block, .header_search_mobile_block {
         width: 30px;
     }
     .header_warenkorb_count_block {
