@@ -1,22 +1,22 @@
 /*==================Range==================*/
 
 $('#inp_range_block_first_inp_sm').on('input', function () {
-    let inp_range_block_first_inp = $('#inp_range_block_first_inp_sm').val();
+    let inp_range_block_first_inp = $(this).val();
     $('.inp_range_block_first_inp').text(inp_range_block_first_inp);
 })
 
 $('#inp_range_block_second_inp').on('input', function () {
-    let inp_range_block_first_inp = $('#inp_range_block_second_inp').val();
+    let inp_range_block_first_inp = $(this).val();
     $('.inp_range_block_second_inp').text(inp_range_block_first_inp);
 })
 
 $('.inp_range_block_first_inp_display').on('input', function () {
-    let inp_range_block_first_inp = $('.inp_range_block_first_inp_display').val();
+    let inp_range_block_first_inp = $(this).val();
     $('.inp_range_block_first_inp').text(inp_range_block_first_inp);
 })
 
 $('.inp_range_block_second_inp_display').on('input', function () {
-    let inp_range_block_first_inp = $('.inp_range_block_second_inp_display').val();
+    let inp_range_block_first_inp = $(this).val();
     $('.inp_range_block_second_inp').text(inp_range_block_first_inp);
 })
 
@@ -140,7 +140,7 @@ $('.toggler_menu').on('click', function () {
 let search_counter = 0;
 $('.header_search_mobile_block').on('click', function () {
     search_counter++;
-    if (search_counter % 2 !== 0 ) {
+    if (search_counter % 2 !== 0) {
         $('.search_modal, .mobile_opacity_efect').css({ "opacity": "1", "visibility": "visible" })
     }
     else {

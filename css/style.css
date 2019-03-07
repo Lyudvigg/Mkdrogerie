@@ -1273,7 +1273,7 @@ header nav {
     text-transform: capitalize;
 }
 
-.page_guide_block_items_active {
+.page_guide_active {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #333333;
