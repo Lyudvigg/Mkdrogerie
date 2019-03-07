@@ -1067,7 +1067,6 @@ header nav {
     width: 100%;
     color: rgb(76, 86, 92);
     background: #FFF;
-    width: 281px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1558,7 +1557,6 @@ div[slider]>input[type=range]::-ms-tooltip {
 /*===============Card============*/
 
 .card {
-    width: 32.3%;
     padding: 25px 25px 24px;
     background: #fff;
     border: none;
@@ -1571,6 +1569,16 @@ div[slider]>input[type=range]::-ms-tooltip {
     -o-transition: .5s;
     position: relative;
     z-index: 2;
+    min-height: 505px;
+}
+
+.card--items {
+    padding: 0 10px;
+}
+
+.cards_block-elem {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .product_discount_block {
@@ -1816,10 +1824,9 @@ div[slider]>input[type=range]::-ms-tooltip {
     margin-bottom: 65px;
 }
 
-.cards_block {
-    display: flex;
-    flex-wrap: wrap;
+.cards_block-elem {
     justify-content: space-between;
+    display: flex;
 }
 
 .card__discounted_price_red {
@@ -1840,7 +1847,6 @@ div[slider]>input[type=range]::-ms-tooltip {
 /*===========Right-Container=============*/
 
 .shop_right_menu_block {
-    margin-left: 17px;
     width: 100%;
 }
 
@@ -2385,15 +2391,18 @@ a:hover {
     }
     /*==============prodocut================*/
     .card_btn, .card_block_functionality, .after_selected {
-        width: calc(100% - 51px);
+        width: calc(100% - 20px);
     }
     .plus_block, .count_block, .delete_icon_block, .minuse_block {
         width: 50px;
     }
-    /*================Left menu===============*/
-    .shop_left_menu_block, .accordion {
-        width: 200px;
+    .card {
+        padding: 25px 10px 24px;
     }
+    .header_bottom_block_categories, .left_menu {
+        width: 210px;
+    }
+    /*================Left menu===============*/
     .Card__img-block {
         width: 160px;
     }
@@ -2445,7 +2454,6 @@ a:hover {
     }
     /*==============page_content==============*/
     .card {
-        width: 49%;
         align-items: center;
     }
     .product-item-name {
@@ -2456,7 +2464,7 @@ a:hover {
         margin: 0 auto;
     }
     .card_btn, .card_block_functionality, .after_selected {
-        width: calc(100% - 51px);
+        width: calc(100% - 20px);
     }
     .bottom_pagination_block .pagination_page_block {
         flex-direction: column;
@@ -2464,6 +2472,12 @@ a:hover {
     }
     .pagination_page_text {
         margin-bottom: 15px;
+    }
+    .header_bottom_block_categories, .left_menu {
+        width: 210px;
+    }
+    .header_bottom_block__items {
+        margin-right: 30px;
     }
     /*==============footer==============*/
     .footer_content__itemss {
@@ -2581,10 +2595,13 @@ a:hover {
     .pagination_block {
         height: 165px;
     }
+    .card--items {
+        width: 49%;
+    }
 }
 
 @media (max-width: 500px) {
-    .card {
+    .card--items {
         width: 100%;
     }
     .card_btn, .card_block_functionality, .after_selected {
